@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jackson Wonder</title>
+		<style>
+			body
+			{
+				background:#eee;
+				text-align:center;
+				margin:20px;
+				font-family:'Segoe UI', sans-serif;
+				font-size:12px;
+			}
+			#game
+			{
+				background:white;
+				box-shadow:0px 0px 30px #888;
+				border:1px solid #999;
+			}
+		</style>
+		<script src="Entity.js"></script>
+		<script src="Renderer.js"></script>
+		<script src="Keyboard.js"></script>
+		<script src="Player.js"></script>
+		<script src="Collision.js"></script>
+		<script src="CollisionFeeler.js"></script>
+		<script src="Scenery.js"></script>
+		<script src="GameManager.js"></script>
+		<script src="Enemy.js"></script>
+		<script src="Sign.js"></script>
+		<script src="Cursor.js"></script>
+		<script src="Game.js"></script>
+		<script src="Level1.js"></script>
+		<script src="Bootstrapper.js"></script>
+		<script src="Experience.js"></script>
+		<script src="Camera.js"></script>
+		<script src="Point.js"></script>
+	</head>
+	<body onload="Bootstrap()">
+		<canvas id="game" width="800" height="400"></canvas>
+		<p>Use the arrow keys to move. You can click on signs to interact with them.</p>
+		<p><label for="debug"><input onchange="new GameManager().setDebug(this.checked)" type="checkbox" id="debug"/> Debug entities</label>.</p>
+	</body>
+</html>
